@@ -20,7 +20,7 @@ Ex. `mvn clean test '-Dsurefire.suiteXmlFiles="src/main/resources/api/xml/framew
 
 ## Report File
 
-Find Summary-Report{DateTime}.html file in Path:`test-output\arv\API*.html`.
+Find Summary-Report{DateTime}.html file in Path:`test-output\API*.html`.
 
 ## Website API Testing
 https://restful-booker.herokuapp.com/apidoc/index.html
