@@ -1,0 +1,23 @@
+{
+  "login_id_0001": {
+    "scenario_name": "Login service successfully",
+    "description": "[Given:User Login service success'., When: Users follow these steps , Then: Should be login success]",
+    "expected_result": [
+      "1. Login success"
+    ],
+    "test_data": {
+      "body": {
+        "username": "admin",
+        "password": "password123"
+      }
+    },
+    "expected_result_key": [
+      "200"
+    ],
+    "response_body": {
+    },
+    "logs": [
+    ],
+    "is_skip": false
+  }
+}

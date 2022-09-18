@@ -1,0 +1,42 @@
+{
+  "create_book_id_0001": {
+    "scenario_name": "User create book successfully",
+    "description": "[Heroku Service]-[Given:User create book success'., When: Users follow these steps , Then: Should be create book success]",
+    "expected_result": [
+      "1. Create Book Success"
+    ],
+    "test_data": {
+      "body": {
+        "firstname": "Jim",
+        "lastname": "Brown",
+        "totalprice": 111,
+        "depositpaid": true,
+        "bookingdates": {
+          "checkin": "2018-01-01",
+          "checkout": "2019-01-01"
+        },
+        "additionalneeds": "Breakfast"
+      }
+    },
+    "expected_result_key": [
+      "200"
+    ],
+    "response_body": {
+      "bookingid": 1,
+      "booking": {
+        "firstname": "Jim",
+        "lastname": "Brown",
+        "totalprice": 111,
+        "depositpaid": true,
+        "bookingdates": {
+          "checkin": "2018-01-01",
+          "checkout": "2019-01-01"
+        },
+        "additionalneeds": "Breakfast"
+      }
+    },
+    "logs": [
+    ],
+    "is_skip": false
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "update_book_id_0001": {
+    "scenario_name": "User update book successfully",
+    "description": "[Heroku Service]-[Given:User update book success'., When: Users follow these steps , Then: Should be update book success]",
+    "expected_result": [
+      "1. Update Book Success"
+    ],
+    "test_data": {
+      "body": {
+        "firstname": "Jim",
+        "lastname": "Brown",
+        "totalprice": 300,
+        "depositpaid": true,
+        "bookingdates": {
+          "checkin": "2018-01-01",
+          "checkout": "2019-01-01"
+        },
+        "additionalneeds": "Lunch"
+      },
+      "id": "2635"
+    },
+    "expected_result_key": [
+      "200"
+    ],
+    "response_body": {
+      "bookingid": 1,
+      "booking": {
+        "firstname": "Jim",
+        "lastname": "Brown",
+        "totalprice": 300,
+        "depositpaid": true,
+        "bookingdates": {
+          "checkin": "2018-01-01",
+          "checkout": "2019-01-01"
+        },
+        "additionalneeds": "Breakfast"
+      }
+    },
+    "logs": [
+    ],
+    "is_skip": false
+  },
+  "update_book_id_0002": {
+    "scenario_name": "User partial update book successfully",
+    "description": "[Heroku Service]-[Given:User update partial book success'., When: Users follow these steps , Then: Should be update partial book success]",
+    "expected_result": [
+      "1. Update Partial Book Success"
+    ],
+    "test_data": {
+      "body": {
+        "firstname": "Jim",
+        "lastname": "Tomson",
+        "additionalneeds": "Dinner"
+      },
+      "id": "2635"
+    },
+    "expected_result_key": [
+      "200"
+    ],
+    "response_body": {
+      "bookingid": 1,
+      "booking": {
+        "firstname": "Jim",
+        "lastname": "Brown",
+        "totalprice": 111,
+        "depositpaid": true,
+        "bookingdates": {
+          "checkin": "2018-01-01",
+          "checkout": "2019-01-01"
+        },
+        "additionalneeds": "Breakfast"
+      }
+    },
+    "logs": [
+    ],
+    "is_skip": false
+  }
+}

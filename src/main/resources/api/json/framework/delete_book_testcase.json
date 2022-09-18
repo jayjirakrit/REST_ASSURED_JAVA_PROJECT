@@ -1,0 +1,22 @@
+{
+  "delete_book_id_0001": {
+    "scenario_name": "User delete book successfully",
+    "description": "[Heroku Service]-[Given:User delete book success'., When: Users follow these steps , Then: Should be delete book success]",
+    "expected_result": [
+      "1. Delete Book Success"
+    ],
+    "test_data": {
+      "body": {
+      },
+      "id": "2635"
+    },
+    "expected_result_key": [
+      "201"
+    ],
+    "response_body": {
+    },
+    "logs": [
+    ],
+    "is_skip": false
+  }
+}

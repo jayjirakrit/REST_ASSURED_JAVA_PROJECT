@@ -1,0 +1,28 @@
+pipeline {
+    agent { label 'ncid-helm' }
+
+    stages {
+
+        stage('Build Project') {
+            steps {
+                bat "java --version"
+                bat "mvn clean"
+                echo "Build Rest Assured Project Successful ...."
+            }
+        }
+
+        stage('Run Project') {
+            steps {
+                bat "mvn --version"
+                bat "mvn compile test -DSUITEFILE=src/main/resources/api/xml/framework/e2e_book.xml"
+                echo "Run Test Project Successfully ...."
+            }
+        }
+    }
+    post {
+        always {
+            publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: '', reportFiles: 'test-output/*.html', reportName: 'HTML Report', reportTitles: ''])
+            echo "Rest Assured Project Run Job Successful ...."
+        }
+    }
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All test suite for Create Book">
+    <parameter name="suite_name" value="Testing Book Suite"></parameter>
+    <test verbose="1" preserve-order="true" name="Create Book">
+        <classes>
+<!--            <class name="th.co.framework.qa.testcases.api.framework.GetBookSuccessTest"/>-->
+<!--            <class name="th.co.framework.qa.testcases.api.framework.CreateBooksSuccessTest"/>-->
+<!--            <class name="th.co.framework.qa.testcases.api.framework.UpdateBooksSuccessTest"/>-->
+<!--            <class name="th.co.framework.qa.testcases.api.framework.DeleteBooksSuccessTest"/>-->
+            <class name="th.co.framework.qa.testcases.api.framework.EndToEndBookSuccessTest"/>
+
+        </classes>
+    </test>
+</suite>

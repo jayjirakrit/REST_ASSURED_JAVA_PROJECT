@@ -1,0 +1,66 @@
+{
+  "get_books_id_0001": {
+    "scenario_name": "User get all book id successfully",
+    "description": "[Heroku Service]-[Given:User get all book id success'., When: Users follow these steps , Then: Should be get all book id success]",
+    "expected_result": [
+      "1. Get All Book Id Success"
+    ],
+    "test_data": {
+      "body": {
+      }
+    },
+    "expected_result_key": [
+      "200"
+    ],
+    "response_body": [
+      {
+        "bookingid": 1
+      },
+      {
+        "bookingid": 2
+      },
+      {
+        "bookingid": 3
+      },
+      {
+        "bookingid": 4
+      }
+    ],
+    "logs": [
+    ],
+    "is_skip": false
+  },
+  "get_book_id_0001": {
+    "scenario_name": "User get book successfully",
+    "description": "[Heroku Service]-[Given:User get all book id success'., When: Users follow these steps , Then: Should be get all book id success]",
+    "expected_result": [
+      "1. Get All Book Id Success"
+    ],
+    "test_data": {
+      "body": {
+      },
+      "id": "1"
+    },
+    "expected_result_key": [
+      "200"
+    ],
+    "response_body": {
+      "firstname": "Sally",
+      "lastname": "Brown",
+      "totalprice": 111,
+      "depositpaid": true,
+      "bookingdates": {
+        "checkin": "2013-02-23",
+        "checkout": "2014-10-23"
+      },
+      "additionalneeds": "Breakfast"
+    }
+  },
+  "logs": [
+  ],
+  "is_skip": false
+}
+
+
+
+
